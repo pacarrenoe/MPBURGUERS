@@ -12,6 +12,9 @@ class Producto (models.Model):
     Descripcion=models.TextField(max_length=500, blank=True, null=True, verbose_name="Descripcion -")
     Imagen=models.ImageField(upload_to="productos", null=True)
 
+    def __str__(self):
+        return self.NombreP
+
 
 class Cliente (models.Model):   
     RutC=models.AutoField(primary_key=True, verbose_name="Rut -")
