@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="{% static 'app/img/icono.png' %}" type="image/x-icon">
+	<link rel="stylesheet" href="{% static 'app/css/flexboxgrid.min.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="{% static 'app/css/inicio.css' %}">
+	<title>MP BURGUERS</title>
+</head>
+<body id="body">
+	<div class="container"> 
+		<div class="row">
+			<div class="col-xs-3">
+				<header class="logos1" >
+					<img src="{% static 'app/img/hamburguesa.png' %}" alt="Logo">
+				</header>
+			</div>
+			<div class="col-xs-6" >
+				<header class="hdrprincipal" >
+					<h1>MP BURGUERS</h1>
+				</header>
+			</div>
+			<div class="col-xs-3">
+				<header class="logos2" >
+					<img src="{% static 'app/img/papas.png' %}" alt="Logo">
+				</header>
+			</div>
+			<div class="col-xs-12">
+				<nav id="fondo" class="navprincipal">
+                    <a href="Home.html">    HOME </a>
+					<a href="Menu.html">    MENU </a>
+					<a href="Pedido.html" style="color: rgb(235, 177, 102);">    HAZ TU PEDIDO </a> 
+					<a href="Somos.html">    SOMOS </a>      
+				</nav>
+			</div>
+			<div class="col-xs-12">
+
+				{% block contenedor %}
+
+
+
+
+
+
+                
+                {% endblock contenedor %}
+
+			</div>	       
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="{% static 'app/js/carrusel.js' %}"></script>
+
+    <div class="container">
+        <div class="row">
+			<div class="col-xs-12" id="fondo">
+                <footer class="info" >
+                <i class="icono fas fa-map-marker-alt"></i>
+                 <p>Av. Quellón 1522, Maipú - Chile</p> 
+                <br>
+                <i class="icono fas fa-envelope"></i>   
+                <p>MPBurguers@contacto.cl</p>
+                <br>
+                <i class="icono fas fa-truck"></i>    
+                <p>Despachos gratis dentro de Maipú</p>
+    
+                </footer>
+            </div>
+        </div>    
+    </div>
+
+
+</body>
+</html>
+
+<footer>
+
+    </footer>
