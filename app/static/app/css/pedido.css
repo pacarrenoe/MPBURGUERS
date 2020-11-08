@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 35%, 0.459), rgba(148, 148, 148, 0.534)),url(../img/Fuego.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 35%, 0.459), hsla(0, 0%, 50%, 0.459)),url(../img/Fuego.jpg);
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px ;
+}
+
+/* Formulario cuerpo*/
+
+.contenedor{
+    
+    max-width: 100%;
+    background: -webkit-linear-gradient(to right, #2f2f336e, #1d1d1f6e),url(../img/Pizarra.jpg);
+    background: linear-gradient(to right, #2f2f336e, #1d1d1f6e),url(../img/Pizarra.jpg);
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 2px rgb(0, 0, 0, .5);
+}
+
+.contenedor h1{ 
+    
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color:white;
+    text-shadow: 1px 2px rgb(39, 39, 39);
+    height: 100%;
+    padding: 5px /*↑*/ 15px /*→*/ 5px /*↓*/ 10px /*←*/;  
+   
+}
+
+.contenedor a{
+    color:white;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 1px 2px rgb(0, 0, 0);
+    padding: 35px /*↑*/ 15px /*→*/ 15px /*↓*/ 10px /*←*/;     
+}
+
+
+.contenido{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido .info, .contenido .formulario{
+    width: 100%;
+}
+
+.info{
+    text-align: center ; 
+}
+
+.info .png{
+    width: 100%;
+    padding: 10px /*↑*/ 15px /*→*/ 15px /*↓*/ 10px /*←*/;
+   
+    
+}
+
+.info .png .icono{
+    width: 100%;
+    color: rgb(32, 179, 52);
+          
+}
+
+.info .png p{
+    color: rgb(255, 255, 255);
+}
+
+/*Cuerpo formulario*/
+
+
+.formulario input[type='text'],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding:12px 20px;
+    border: 1px solid  rgb(172, 23, 23);
+    font-family: 'Montserrat', sans-serif; 
+    outline: 0;
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 125px;
+    max-height: 200px;
+}
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+    border: 1px solid white;
+}
+
+.formulario button{
+    padding: 12px 30px;
+    border: transparent;
+    background: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/*validacion*/
+
+.alert{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+}
